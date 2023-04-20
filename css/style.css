@@ -4,8 +4,93 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
   min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 412px;
+  max-height: 712px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.card__img {
+  width: 100%;
+}
+.card__content {
+  padding: 2em 2em;
+}
+.card__title {
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+  font-weight: 900;
+}
+.card__text {
+  margin: 1em 0 1.4em;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  font-weight: 300;
+}
+.card__box {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 0.8em;
+  padding: 1em;
+  background-color: hsla(225, 100%, 94%, 0.3);
+  border-radius: 8px;
+}
+.card__box-icon {
+  width: 50px;
+}
+.card__box-span {
+  margin-right: 1em;
+}
+.card__box-author {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.card__box-price {
+  color: hsl(224, 23%, 55%);
+}
+.card__link {
+  color: hsl(245, 75%, 52%);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.card__btn {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+.card__btn--cancel {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  color: hsl(224, 23%, 55%);
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 900;
 }
 
 .attribution {

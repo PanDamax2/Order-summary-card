@@ -4,13 +4,112 @@
 	box-sizing: border-box;
 }
 
-body {
-	min-height: 100vh;
+html {
+	font-size: 62.5%;
 }
 
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em 1em;
+	min-height: 100vh;
+	background-color: $pale-blue;
+	font-size: 1.6rem;
+	font-family: 'Red Hat Display', sans-serif;
+}
 
+.card {
+	width: 100%;
+	max-width: 412px;
+	max-height: 712px;
+	background-color: $very-pale-blue;
+	border-radius: 18px;
+	overflow: hidden;
 
+	&__img {
+		width: 100%;
+	}
+
+	&__content {
+		padding: 2em 2em;
+	}
+
+	&__title {
+		color: $dark-blue;
+		text-align: center;
+		font-weight: 900;
+	}
+
+	&__text {
+		margin: 1em 0 1.4em;
+		color: $desaturated-blue;
+		text-align: center;
+		font-weight: 300;
+	}
+
+	&__box {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		align-items: center;
+		gap: 0.8em;
+		padding: 1em;
+		background-color: hsl(225deg 100% 94% / 30%);
+		border-radius: 8px;
+
+		&-icon {
+			width: 50px;
+		}
+
+		&-span {
+			margin-right: 1em;
+		}
+
+		&-author {
+			color: $dark-blue;
+			font-weight: 900;
+		}
+
+		&-price {
+			color: $desaturated-blue;
+		}
+	}
+
+	&__link {
+		color: $bright-blue;
+		font-size: 1.5rem;
+		font-weight: 900;
+	}
+
+	&__btn {
+		display: block;
+		padding: 1em;
+		width: 100%;
+		color: $very-pale-blue;
+		background-color: $bright-blue;
+		border: none;
+		border-radius: 8px;
+		font-weight: 900;
+		font-size: 1.6rem;
+
+		&--cancel {
+			display: block;
+			margin: 0 auto;
+			padding: 1em;
+			color: $desaturated-blue;
+			background-color: transparent;
+			border: none;
+			font-size: 1.6rem;
+			font-weight: 900;
+		}
+	}
+}
 
 .attribution {
 	font-size: 11px;
