@@ -21,13 +21,13 @@ body {
 	padding: 2em 1em;
 	min-height: 100vh;
 	background-color: $pale-blue;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-family: 'Red Hat Display', sans-serif;
 }
 
 .card {
 	width: 100%;
-	max-width: 412px;
+	max-width: 326px;
 	max-height: 712px;
 	background-color: $very-pale-blue;
 	border-radius: 18px;
@@ -38,7 +38,7 @@ body {
 	}
 
 	&__content {
-		padding: 2em 2em;
+		padding: 2em 2.4em;
 	}
 
 	&__title {
@@ -50,28 +50,34 @@ body {
 	&__text {
 		margin: 1em 0 1.4em;
 		color: $desaturated-blue;
-		text-align: center;
+		font-size: 1.2rem;
+		line-height: 1.8rem;
 		font-weight: 300;
+		text-align: center;
 	}
 
 	&__box {
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
 		align-items: center;
-		gap: 0.8em;
 		padding: 1em;
-		background-color: hsl(225deg 100% 94% / 30%);
+		background-color: hsl(225deg 100% 94% / 20%);
 		border-radius: 8px;
 
 		&-icon {
-			width: 50px;
+			transform: translate(3px, 1px);
+			width: 36px;
 		}
 
 		&-span {
 			margin-right: 1em;
+			font-size: 1.2rem;
+			transform: translateX(-0.4rem);
 		}
 
 		&-author {
+			display: block;
+			margin-bottom: 0.2em;
 			color: $dark-blue;
 			font-weight: 900;
 		}
@@ -83,20 +89,22 @@ body {
 
 	&__link {
 		color: $bright-blue;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		font-weight: 900;
+		transform: translateX(1.4rem);
 	}
 
 	&__btn {
 		display: block;
-		padding: 1em;
+		margin: 2.6em 0 1em;
+		padding: 1.2em;
 		width: 100%;
 		color: $very-pale-blue;
 		background-color: $bright-blue;
 		border: none;
-		border-radius: 8px;
+		border-radius: 10px;
 		font-weight: 900;
-		font-size: 1.6rem;
+		font-size: 1rem;
 
 		&--cancel {
 			display: block;
@@ -105,7 +113,7 @@ body {
 			color: $desaturated-blue;
 			background-color: transparent;
 			border: none;
-			font-size: 1.6rem;
+			font-size: 1rem;
 			font-weight: 900;
 		}
 	}
