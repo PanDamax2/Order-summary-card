@@ -15,6 +15,9 @@ body {
   padding: 2em 1em;
   min-height: 100vh;
   background-color: hsl(225, 100%, 94%);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   font-size: 1.4rem;
   font-family: "Red Hat Display", sans-serif;
 }
@@ -77,6 +80,13 @@ body {
   font-size: 1rem;
   font-weight: 900;
   transform: translateX(1.4rem);
+  transition: color 0.3s, -webkit-text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
+}
+.card__link:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
 }
 .card__btn {
   display: block;
@@ -89,6 +99,11 @@ body {
   border-radius: 10px;
   font-weight: 900;
   font-size: 1rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.card__btn:hover {
+  background-color: hsl(224, 23%, 55%);
 }
 .card__btn--cancel {
   display: block;
@@ -99,13 +114,15 @@ body {
   border: none;
   font-size: 1rem;
   font-weight: 900;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.card__btn--cancel:hover {
+  color: hsl(223, 47%, 23%);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
+@media (min-width: 576px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
 }/*# sourceMappingURL=style.css.map */
